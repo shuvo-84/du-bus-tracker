@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Du Bus Tracker</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="login_rules">Contact The Developer To Get Email And Password</string>
+    <string name="hi_n_welcome_to_your_app">Hi,\nWelcome to your app</string>
+
+    <string name="your_app_tag_line">Your app tag line</string>
+
+    <string name="forget_password">Forget Password?</string>
+
+    <string name="password">Password</string>
+
+    <string name="username">Username</string>
+
+    <string name="sign_in_to_continue">Sign In to continue</string>
+
+    <string name="hello_there_welcome_back">Hello there,\nWelcome Back</string>
+
+    <string name="go">GO</string>
+
+    <string name="new_user_sign_up">New User? SIGN UP</string>
+
+    <string name="welcome">Welcome</string>
+
+    <string name="signup_to_start_your_new_journey">SignUp to start your new journey</string>
+
+    <string name="full_name">Full Name</string>
+
+    <string name="email_id">Email Id</string>
+
+    <string name="phone_number">Phone Number</string>
+
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="sign_up">Sign up</string>
+    <string-array name="bus_name_options">
+        <item>Anando</item>
+        <item>Boishakhi</item>
+        <item>Boshonto</item>
+        <item>Choitaly</item>
+        <item>Falguni</item>
+        <item>Hemonto</item>
+        <item>Isha Kha</item>
+        <item>Khonika</item>
+        <item>Kinchit</item>
+        <item>Srabon</item>
+        <item>Torongo</item>
+        <item>Ullash</item>
+    </string-array>
+
+    <string-array name="bus_type_options">
+        <item>Up</item>
+        <item>Down</item>
+    </string-array>
+    <string-array name="devNumber">
+        <item>Emon Khan</item>
+        <item>Atikur Hridoy</item>
+        <item>Sajid Hasan</item>
+    </string-array>
+    <string-array name="helpType">
+        <item>Need Blood</item>
+        <item>Tuition</item>
+        <item>Notice</item>
+        <item>Others</item>
+    </string-array>
+    <string name="demo_post">This is Demo Post</string>
+    <string name="title_activity_fragment_profile_others">FragmentProfileOthers</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="title_activity_login_user">LoginUser</string>
+</resources>

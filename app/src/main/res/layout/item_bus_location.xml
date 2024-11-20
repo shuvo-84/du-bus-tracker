@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/locationCardView"
+    android:background="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:background="?attr/selectableItemBackground"
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photoLocation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/usernameLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Emon Khan"
+                android:fontFamily="@font/montserrat_bold"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/UserTypeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="● Admin"
+                android:textColor="#FF0000"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:fontFamily="@font/montserrat_semibold"
+                android:id="@+id/deptNameSessionLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CSE 20-21"
+                android:textColor="@color/green"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/lastLocation"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:text="Last Location: Near Dhaka"
+            android:ellipsize="end"
+            android:fontFamily="@font/montserrat_bold"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@id/image"
+            android:layout_marginStart="20dp" />
+        <TextView
+            android:id="@+id/lastTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Last Time: 7:19"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_toEndOf="@id/image"
+            android:layout_below="@id/lastLocation"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/dark_grey_color"
+            tools:ignore="SmallSp" />
+        <TextView
+            android:id="@+id/lastDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 19 Sept 2023"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_toEndOf="@id/image"
+            android:layout_below="@id/lastTime"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/dark_grey_color"
+            tools:ignore="SmallSp" />
+        <TextView
+            android:id="@+id/timeDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seen 10 min ago"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_toEndOf="@id/image"
+            android:layout_below="@id/lastDate"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/blue"
+            tools:ignore="SmallSp" />
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/upDownReport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image"
+            android:layout_below="@id/timeDiff"
+            android:layout_marginStart="20dp">
+
+            <!-- Vote Count TextView -->
+            <TextView
+                android:id="@+id/voteCountLocation"
+                android:layout_marginTop="1dp"
+                android:text="-77"
+                android:textColor="#009688"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:textSize="13sp"
+                android:gravity="center_vertical" />
+
+            <!-- Upvote Button -->
+            <ImageView
+                android:id="@+id/upvoteLocation"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:clickable="true"
+                android:src="@drawable/arrow_upward"
+                android:contentDescription="Upvote"
+                android:layout_toRightOf="@id/voteCountLocation" />
+
+            <ImageView
+                android:id="@+id/downVoteLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="20sp"
+                android:clickable="true"
+                android:src="@drawable/arrow_downward"
+                android:contentDescription="Downvote"
+                android:layout_toRightOf="@id/upvoteLocation" />
+            <ImageView
+                android:background="?attr/selectableItemBackground"
+                android:id="@+id/reportProfileLocaton"
+                android:layout_width="20dp"
+                android:layout_height="20sp"
+                android:clickable="true"
+                android:src="@drawable/report_user"
+                android:contentDescription="Report"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
